@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.7);
+  height: 80vh;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#screen {
+  width: 90%;
+  margin: 18px 10px;
+  padding-bottom: 0;
+  padding-top: 23px;
+  height: 12%;
+  background: rgba(128, 128, 128, 0.7);
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: right;
+  padding-right: 1px;
+  border: none;
+  outline: none;
+  font-size: 2em;
+  padding-right: 15px;
+}
+
+#grid {
+  width: 94%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  height: 65%;
+  padding-top: 30px;
+}
+
+button {
+  font-size: 1.4em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+#cls {
+  background: rgb(165, 42, 79);
+  grid-column: span 4;
+}
+
+.spanRow {
+  grid-row: span 2;
+}
+
+.spanCol {
+  grid-column: span 2;
+}
+
+.current {
+  background-color: rgb(146, 18, 129);
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 300px;
+    height: 60vh;
+    margin-top: 40px;
+  }
+
+  #screen {
+    height: 10%;
+    margin-bottom: 5px;
+    margin-top: 24px;
+  }
+}
